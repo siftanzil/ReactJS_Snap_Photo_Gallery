@@ -4,10 +4,9 @@ import { getFirestore } from "firebase/firestore";
 import { getDatabase } from "firebase/database";
 import { getAuth } from "firebase/auth";
 
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
-   apiKey: "AIzaSyA_8ABB6_BF_d-T48NVHt_544-Pjiw_UQM",
+   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
    authDomain: "sif-react-firegram.firebaseapp.com",
    projectId: "sif-react-firegram",
    storageBucket: "sif-react-firegram.appspot.com",
